@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/evaluate",
+      "lambdaFunction": "evaluate",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/evaluate"
+    }
+  ],
+  "resourceName": "evaluatorApi",
+  "apiName": "evaluatorApi",
+  "functionArns": [
+    {
+      "lambdaFunction": "evaluate"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-evaluator-dev-100708-authRole",
+    "unAuthRoleName": "amplify-evaluator-dev-100708-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "evaluate",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
