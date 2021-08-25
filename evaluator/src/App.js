@@ -17,7 +17,7 @@ function App() {
   const [first, setFirst] = useState(null);
   const [second,setSecond] = useState(null);
   useEffect(()=>{
-    document.getElementById('foobar').addEventListener('keyup', e => {
+    /*document.getElementById('foobar').addEventListener('keyup', e => {
       console.log('Caret at: ', e.target.selectionStart)
       var character = expression[e.target.selectionStart];
       if (character === '('){
@@ -37,7 +37,7 @@ function App() {
         }
         
       }
-    })
+    })*/
   })
   const toggleChange = (i,j) =>{
     var tempR = result;
